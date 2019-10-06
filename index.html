@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Sign in</a>
+            <a class="nav-link" href="signup.html">User Account</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -38,7 +38,7 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" id="drop">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Jobs
             </a>
@@ -61,19 +61,11 @@
         <div class="carousel-item active" style="background-image: url(pic1.jpg)">
           <div class="carousel-caption d-none d-md-block">
             <h3>Need a Part time Job?</h3>
-            <p>You are right at the perfect place!</p>
+            <p>You are right at the perfet place!</p>
           </div>
         </div>
 
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </header>
 
@@ -83,9 +75,8 @@
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
       <h1 class="display-3">Flexi Job Horizon</h1>
-      <p class="lead">Would you like to receive updates on new exciting job offers and apply with one click? Register as a student today!</p>
-      <a href="login.html" class="btn btn-primary btn-lg">Login</a>
-      <a href="login.html" class="btn btn-primary btn-lg">Register</a>
+      <p class="lead">Would you like to receive updates on new exciting job offers and apply with one click? <br> Only registered students can get this opportunity! Register today!</p>
+      <a href="signup.html" class="btn btn-primary btn-lg">Login or sign up</a>
     </header>
 
 
@@ -118,7 +109,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-lightgrey">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Flexi Job Horizon 2019</p>
     </div>
@@ -128,6 +119,18 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+
+
+
+<script src="signinlogin.js"></script>
 
 </body>
 
