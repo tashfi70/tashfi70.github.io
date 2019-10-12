@@ -1,164 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>JobPortal - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-  <title>Flexi Job - Contact</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
 
-  <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
-  <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-
-
-</head>
-
-<body style="background-color:lightgrey;">
-
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="signup.html">User Account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-    </div>
-  </header>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
-  <!-- Page Content -->
-  <div class="container">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Contact
-      <small>Flexi Job Horizon</small>
-    </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Flexi Job Horizon</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+
+	          <li class="nav-item" id="jobs"><a href="jobs.html" class="nav-link">Jobs</a></li>
+            <li class="nav-item" id="post"><a href="addjob.html" class="nav-link">Post Job</a></li>
 
 
-    <!-- Content Row -->
-    <div class="row">
-      <!-- Map Column -->
-      <div class="col-lg-8 mb-4">
-        <!-- Embedded Google Map -->
-        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-      </div>
-      <!-- Contact Details Column -->
-      <div class="col-lg-4 mb-4">
-        <h3>Contact Details</h3>
-        <p>
-          Millitary Institute of Science and Technology
-          <br>Mirpur Cantonment, Mirpur
-          <br>
-        </p>
-        <p>
-          <abbr title="Phone">P</abbr>: (123) 456-7890
-        </p>
-        <p>
-          <abbr title="Email">E</abbr>:
-          <a href="mailto:name@example.com">flexijobhorizon@gmail.com
-          </a>
-        </p>
-        <p>
-          <abbr title="Hours">H</abbr>: Everyday: 9:00 AM to 5:00 PM
-        </p>
-      </div>
-    </div>
-    <!-- /.row -->
+	          <li class="nav-item" id="logout"><a href="logout.html" class="nav-link">Account</a></li>
+            <li class="nav-item" id="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+	          <li class="nav-item cta mr-md-2" id="up"><a href="signup.html" class="nav-link">Sign Up</a></li>
+	          <li class="nav-item cta cta-colored" id="in"><a href="signin.html" class="nav-link">Sign In</a></li>
 
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="container">
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
 
-        <div class="contact" style="background-color:lightgrey;">
-          <div class="col-lg-8 mb-4">
-          <h3>Need something to message?</h3>
-          <div class="alert">Your message has been sent, Redirecting to Home</div>
-          <form id="contactForm" style="background-color:lightgrey;">
-            <p>
-              <label>Name</label>
-              <input type="text" name="name" id="name" required>
-            </p>
-
-            <p>
-              <label>Institue</label>
-              <input type="text" name="company" id="company">
-            </p>
-            <p>
-              <label>Email Address</label>
-              <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-              <label>Phone Number</label>
-              <input type="text" name="phone" id="phone">
-            </p>
-            <p class="full">
-              <label>Message</label>
-              <textarea name="message" rows="5" id="message"></textarea>
-            </p>
-            <p class="full">
-              <button type="submit">Submit</button>
-            </p>
-          </form>
+    <div class="hero-wrap js-fullheight" style="background-image: url('pic1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center text-md-left mb-5" data-scrollax=" properties: { translateY: '70%' }">
+          	<p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact Us</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <center>
-      <button class="add-new-button" onclick="setup()">Show previous messages</button>
-    </center>
-
-
-    <!-- Footer -->
-        <footer class="py-5 bg-lightgrey">
-          <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Flexi Job Horizon 2019</p>
+    <section class="ftco-section contact-section bg-light">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h3">Contact Information</h2>
           </div>
-          <!-- /.container -->
-        </footer>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+          </div>
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form id="contactForm" action="#" class="bg-white p-5 contact-form">
+            <h3>Send us message</h3>
+              <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" type="text" name="company" id="company" class="form-control" placeholder="Your institute">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone number">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Your message"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary py-3 px-5">Send message</button>
+              </div>
+            </form>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+          </div>
+
+          <div class="col-md-6 d-flex">
+          	<div class="hero-wrap js-fullheight" style="background-image: url('blocks.jpg');"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+        	<div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>A website for students to find suitable intern/part-time jobs. Only signed in users can search for jobs here.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="http://twitter.com" target="blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="http://facebook.com" target="blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="http://instagram.com" target="blank"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Employers</h2>
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="py-2 d-block">How it works</a></li>
+                <li onclick="decide()"><a href="#" class="py-2 d-block">Find a Job</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2"><a  href="contact.html">Have a Questions?</a></h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Millitary Institute of Science and Technology Mirpur Cantonment, Mirpur</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(123) 456-7890</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">flexijobhorizon@abc.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>Flexi Job Horizon</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
-        <script src="main.js"></script>
-    <script src="read.js"></script>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+<script src="main.js"></script>
 
   </body>
-
-  </html>
+</html>

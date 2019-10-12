@@ -16,30 +16,6 @@ const db = firebase.firestore();
 // update firestore settings
 db.settings({ timestampsInSnapshots: true});
 
-
-auth.onAuthStateChanged(user => {
-  console.log(user);
-
-
-
-  if(user){
-    console.log("if loop foruser");
-
-    document.getElementById("drop").style.display = 'block';
-
-  }
-
-  else{
-    console.log("else loop foruser");
-
-    document.getElementById("drop").style.display = 'none';
-
-  }
-
-})
-
-
-
 auth.onAuthStateChanged(user => {
   console.log(user);
 
@@ -47,12 +23,23 @@ auth.onAuthStateChanged(user => {
 
   if(user){
     console.log("if loop sign");
-      document.getElementById("divform").style.display = 'none';
 
+    if(user.email=="a@a.com")
+    {
+      console.log("its admin");
+      //document.getElementById("drop").style.display = 'block';
+      document.getElementById("jobs").style.display = 'none';
+      document.getElementById("post").style.display = 'none';
+
+    }
+    else {
+      document.getElementById("admin").style.display = 'none';
+    }
+
+    //document.getElementById("drop").style.display = 'block';
       document.getElementById("em").innerHTML = user.email;
 
-    	document.getElementById("out").style.display = 'block';
-    	document.getElementById("divformout").style.display = 'block';
+    //	document.getElementById("out").style.display = 'block';
 
 
       //log out method
@@ -65,7 +52,7 @@ auth.onAuthStateChanged(user => {
 
         setTimeout(function(){
           document.location.href="./index.html";
-        },3050);
+        },10);
 
       });
 
@@ -73,10 +60,6 @@ auth.onAuthStateChanged(user => {
 
   else{
     console.log("else loop sign");
-
-    document.getElementById("divform").style.display = 'block';
-    document.getElementById("out").style.display = 'none';
-    document.getElementById("divformout").style.display = 'none';
     // signup
     const signupform = document.querySelector('#form_signin');
     signupform.addEventListener('submit', (e) => {
@@ -102,7 +85,7 @@ auth.onAuthStateChanged(user => {
 
       setTimeout(function(){
         document.location.href="./index.html";
-      },3050);
+      },10);
 
 
     });
@@ -110,7 +93,7 @@ auth.onAuthStateChanged(user => {
 
 
     //Login
-    const loginform = document.querySelector('#form-login');
+    const loginform = document.querySelector('#form_login');
     loginform.addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -128,7 +111,7 @@ auth.onAuthStateChanged(user => {
 
       setTimeout(function(){
         document.location.href="./index.html";
-      },3050);
+      },10);
     });
 
   }

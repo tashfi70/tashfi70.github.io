@@ -46,7 +46,33 @@ function gotData(data)
       //li.parent('infoshow');
 
 
-      document.write("<br>"+ name + "<br>" + company +  "<br>" + message + "<br>");
+      document.write("Name: " + name + "<br>Institute: " + company +  "<br>Message: " + message + "<br>" + "<br>");
+    }
+}
+
+function setupjobs(){
+
+  ref = firebase.database().ref("addjob").on("value", gotDataJ, errData);
+  //ref.on('value', gotData, errData);
+}
+
+function gotDataJ(data)
+{
+    //console.log(data.val());
+    var scores = data.val();
+    var keys = Object.keys(scores);
+    console.log(keys);
+    for( var i=0; i<keys.length; i++){
+      var k = keys[i];
+      var sit = scores[k].sit;
+      var type = scores[k].type;
+      var link = scores[k].link;
+      //console.log(name, "\n", company,"\n\n", message);
+      //var li = document.createElement('li', name + "\n" + company + "\n\n" + message);
+      //li.parent('infoshow');
+
+
+      document.write("Post: " + sit + "<br>Type: " + type +  "<br>Link: " + link + "<br>" + "<br>");
     }
 }
 

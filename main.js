@@ -11,6 +11,67 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  //make auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true});
+
+  var w;
+  auth.onAuthStateChanged(user => {
+    console.log(user);
+
+    w = user;
+
+  if(user){
+
+    if(user.email=="a@a.com")
+    {
+      console.log("its admin");
+      document.getElementById("post").style.display = 'none';
+      document.getElementById("jobs").style.display = 'none';
+      document.getElementById("up").style.display = 'none';
+      document.getElementById("in").style.display = 'none';
+      document.getElementById("welcome").style.display = 'none';
+
+    }
+    else{
+
+      console.log("id exists but not admin");
+      //document.getElementById("drop").style.display = 'block';
+      document.getElementById("admin").style.display = 'none';
+      document.getElementById("up").style.display = 'none';
+      document.getElementById("in").style.display = 'none';
+      document.getElementById("welcome").style.display = 'none';  //
+
+    }
+  }
+    else{
+        console.log("no user signed in");
+
+        document.getElementById("logout").style.display = 'none';
+        document.getElementById("jobs").style.display = 'none';
+        document.getElementById("admin").style.display = 'none';
+
+    }
+
+  })
+
+  function decide()
+  {
+    if(w)
+    {
+      setTimeout(function(){
+        document.location.href="./jobs.html";
+      },0);
+    }
+    else {
+      alert("YOU MUST BE SIGNED IN FIRST !");
+    }
+  }
+
+
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -31,15 +92,8 @@ function submitForm(e){
 
   // Save message
   saveMessage(name, company, email, phone, message);
-
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
-
+  console.log("done");
+  alert("Your message have been sent");
   // Clear form
   document.getElementById('contactForm').reset();
 
@@ -47,7 +101,7 @@ function submitForm(e){
 
   setTimeout(function(){
     document.location.href="./index.html";
-  },3050);
+  },10);
 
 
 }
