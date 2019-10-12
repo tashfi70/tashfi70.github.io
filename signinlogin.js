@@ -38,10 +38,7 @@ auth.onAuthStateChanged(user => {
 
     //document.getElementById("drop").style.display = 'block';
       document.getElementById("em").innerHTML = user.email;
-
-    //	document.getElementById("out").style.display = 'block';
-
-
+      
       //log out method
       const logout = document.querySelector('#logout');
       logout.addEventListener('click', (e) => {
